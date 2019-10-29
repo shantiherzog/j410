@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial sclae=1">
+    <link href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class="outer-container">
+<div class="slideshow-container">
+    
+    <div class="title">
+   <h1>A Ceremony for the Moon</h1>
+    </div>
+    
+    <div class="project-topic">
+   <h1>Modern Witchcraft in Morro Bay</h1>
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="1.jpg" style="width:100%">
+  <div class="text">Every full moon, the back patio at Top Dog cafe in Morro Bay transforms into a ceremony space for all things astrological and spiritual.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="2.jpg" style="width:100%">
+  <div class="text">The space is carefully created by a woman who has been working as a spiritual healer for almost 20 years. A passerby might call the candles, crystals, and burning sage ‘witchy,’ but her goal is only to do what feels right for herself and those who’ve come to her ceremony. No labels here. 
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="3.jpg" style="width:100%">
+  <div class="text">Laurine Tonkin is an intuitive medium, psychic, and healer. “I connect into the collective pulse of what's happening in the universe… and basically get a feeling or a knowing in myself that helps me to guide and direct other people into their highest healing or into their highest place and that they can exist in this moment.”</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="5.jpg" style="width:100%">
+  <div class="text">Tonkin uses items like crystals, figures of the divine feminine, candles, and tarot cards to channel energy for her ceremony and its attendees. She began the evening with a guided meditation to find a sense of being grounded.</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="6.jpg" style="width:100%">
+  <div class="text">The emotion in the space was palpable as participants burned pieces of paper with sentiments or aspects of their life they wanted to release. Grace Collins found sobriety after her first moon ceremony, after years of struggling with addiction. “It’s always been a huge thing in my life; going back to that moment of throwing that into the fire and letting it go.”</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="7.jpg" style="width:100%">
+  <div class="text">“Sitting with Laurine and having the intuitive messages come through, and being able to reflect on what I need to release in my life has been really beneficial.” -Julie Donahoo (participant)</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="8.jpg" style="width:100%">
+  <div class="text">Laurine feels a calling to facilitating spiritual understanding and healing to groups of people. She ended the ceremony by having participants draw tarot cards.</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="9.jpg" style="width:100%">
+  <div class="text">If a participant needed help with their interpretation, Laurine would gently guide them until they found the meaning together. “There's something in me that says you have to go create magic like that,” she says.</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="10.jpg" style="width:100%">
+  <div class="text">Laurine finds the label ‘witch’ to be a compliment, though she doesn’t explicitly call herself one. “I think that we are definitely blowing out that old stereotype, where people are running around doing hexes, that's not what this is about.”</div>
+</div>
+    
+    <div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="11.jpg" style="width:100%">
+  <div class="text">"It's about women working with medicine, with plants, with the stars, with the earth, with the planets. We're a part of all of that.”</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+     </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+    <span class="dot" onclick="currentSlide(8)"></span> 
+    <span class="dot" onclick="currentSlide(9)"></span> 
+    <span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
